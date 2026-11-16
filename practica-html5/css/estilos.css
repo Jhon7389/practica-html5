@@ -1,0 +1,57 @@
+/* 1. Declaración de la fuente local Poppins */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+/* 2. Estilos generales de la página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    /* Aplicamos la fuente Poppins aquí para que afecte a toda la página */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 3. La tarjeta */
+.tarjeta {
+    width: 300px; 
+    border: 2px solid grey; 
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+}
+
+/* 4. La imagen */
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* 5. El título */
+.tarjeta h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 700; /* Usa la versión Bold de Poppins que declaramos arriba */
+}
+
+/* 6. El párrafo */
+.tarjeta p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+    font-weight: 400; /* Usa la versión Regular de Poppins */
+}
